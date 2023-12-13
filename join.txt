@@ -14,3 +14,8 @@ QUERY 3:    SELECT * FROM `course_teacher`
             INNER JOIN `teachers`
             ON teachers.id=course_teacher.teacher_id
             WHERE teachers.id='44' 
+
+QUERY 4:    SELECT * FROM `students` 
+            JOIN `degrees` ON students.degree_id = degrees.id
+            JOIN `departments` ON degrees.department_id = departments.id
+            ORDER BY students.surname, students.name;
