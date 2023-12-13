@@ -1,0 +1,8 @@
+QUERY 1:    SELECT * FROM `students`
+            INNER JOIN `degrees` ON degrees.id = students.degree_id
+            WHERE degrees.id = '53'; 
+
+
+QUERY 2:    SELECT * FROM `degrees`
+            INNER JOIN `departments` ON departments.id=degrees.department_id
+            WHERE departments.id='7' AND level='magistrale'
